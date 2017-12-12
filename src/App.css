@@ -26,3 +26,71 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #61BFAD;
+}
+header, footer {
+  flex: 0 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F7E8;
+}
+
+header h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.my-quote {
+  max-width: 70vw;
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid grey;
+  background-color: white;
+}
+
+.my-quote h3 {
+  font-family: 'lora', serif;
+  font-size: 3em;
+  padding: 15px 0;
+  line-height: 1.4em;
+}
+
+.my-quote span {
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #61BFAD;
+}
+
+.author {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.genre {
+  font-family: 'inconsolata', monospace;
+
+}
+
+
+
+.featured {
+  background-color: #F9F7E8;
+}
+
+.fa-star {
+  cursor: pointer;
+}

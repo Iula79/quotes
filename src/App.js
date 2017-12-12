@@ -10,7 +10,11 @@ class App extends Component {
         favoriteQuote:null,
         quotes:[]
     }
+    this.favorite = this.favorite.bind(this)
+  }
 
+  favorite(id){
+    this.setState({favoriteQuote: id})
   }
 
   componentDidMount(){
@@ -27,7 +31,7 @@ class App extends Component {
       <div className="App">
         <h1>Our own quotes app</h1>
         { this.state.apiDataLoaded &&
-        this.state.quotes.map((quote) =>(<Quote key={quote.id} quote={quote}/>))
+        this.state.quotes.map((quote) =>(<Quote key={quote.id} quote={quote} favorite={this.favorite}/>))
         }
       </div>
     );
